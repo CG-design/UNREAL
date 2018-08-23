@@ -6,39 +6,29 @@ study  UNREAL 4
 
 ## 按主题浏览
 
-![](http://api.unrealengine.com/images/start_icon.png)(http://api.unrealengine.com/CHN/GettingStarted/index.html)
-
-![start_icon.png](http://api.unrealengine.com/images/start_icon.png)
-
 [![start](http://api.unrealengine.com/images/start_icon.png "主题浏览")](http://api.unrealengine.com/CHN/GettingStarted/index.html)
 
 
-<---[![alt text](http://path/to/img.jpg "title")](你的链接地址)
+<---[![alt text](http://path/to/img.jpg "title")](你的链接地址)--->
 
-[![还有这种操作](http://img.itlun.cn/uploads/allimg/170720/1-1FH0211112.jpg) "title")](#)--->
+<---[![还有这种操作](http://img.itlun.cn/uploads/allimg/170720/1-1FH0211112.jpg) "title")](#)--->
+
 ## 开始 虚幻4 之旅
 
 为刚开始使用虚幻引擎的游戏开发者提供的入门信息。
 
- [](http://api.unrealengine.com/CHN/Engine/Editor/index.html)
-
-![editor_icon.png](http://api.unrealengine.com/images/editor_icon.png)
+[![start](http://api.unrealengine.com/images/editor_icon.png "开始 虚幻4 之旅")](http://api.unrealengine.com/CHN/Engine/Editor/index.html)
 
 ## 虚幻编辑器手册
 
 使用和配置虚幻编辑器工具集的指南。
-
- [](http://api.unrealengine.com/CHN/Engine/index.html)
-
-![docs_icon.png](http://api.unrealengine.com/images/docs_icon.png)
+[![docs](http://api.unrealengine.com/images/docs_icon.png "开始 虚幻4 之旅")](http://api.unrealengine.com/CHN/Engine/index.html)
 
 ## 引擎的各个功能
 
 使用虚幻引擎的工具和系统的完全指南。
 
-[](http://api.unrealengine.com/CHN/Programming/index.html)
-
-![prog_role_icon.png](http://api.unrealengine.com/images/prog_role_icon.png)
+[![docs](http://api.unrealengine.com/images/prog_role_icon.png "引擎的各个功能")](hhttp://api.unrealengine.com/CHN/Programming/index.html)
 
 ## 编程指南
 
