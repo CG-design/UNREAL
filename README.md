@@ -6,7 +6,7 @@ study  UNREAL 4
 
 ## 按主题浏览
 
-![http://api.unrealengine.com/images/start_icon.png](http://api.unrealengine.com/CHN/GettingStarted/index.html)
+![](http://api.unrealengine.com/images/start_icon.png)(http://api.unrealengine.com/CHN/GettingStarted/index.html)
 
 ![start_icon.png](http://api.unrealengine.com/images/start_icon.png)
 
