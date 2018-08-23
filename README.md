@@ -86,6 +86,7 @@ study  UNREAL 4
 
 ![mod_icon.png](http://api.unrealengine.com/images/mod_icon.png)
 
+[4.20](https://www.unrealengine.com/zh-CN/blog/unreal-engine-4-20-released)
 ## 创建 Mod
 
 打造 UE4 Mod 游戏的指南和资源
