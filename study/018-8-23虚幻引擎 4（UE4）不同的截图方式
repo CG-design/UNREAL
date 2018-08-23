@@ -1,0 +1,53 @@
+---
+title: 2018-8-23虚幻引擎 4（UE4）不同的截图方式 
+tags: 虚幻引擎 4,分辨率截图工具,出土
+grammar_cjkRuby: true
+---
+
+
+在虚幻引擎 4（UE4）中，可以多种不同方式获取项目的游戏截图。 本文档将说明用于 UE4 截图的工具及其使用方法。
+默认保存路径
+截图画面会被默认保存到项目文件夹的以下路径中。
+Saved\Screenshots\Windows
+抓取截图画面时，屏幕的右下角将显示以下消息。
+![](https://imgsa.baidu.com/forum/w%3D580/sign=17997d63bf1c8701d6b6b2ee177d9e6e/6687d9f81a4c510fe013219d6c59252dd62aa5a2.jpg)
+点击该消息可直接打开截图所在的目录。
+标准截图
+标准截图功能通过控制台命令 Shot（默认按键绑定为 F9）来执行。 将根据屏幕分辨率大小（如游戏在窗口模式下运行则根据窗口分辨率）生成屏幕截图。
+高分辨率截图
+高分辨率截图是一个强大的跨平台功能，可获取分辨率极高的截图。 它可基于屏幕分辨率（如游戏在窗口模式下运行则根据窗口分辨率）生成任意尺寸的截图。 高分辨率截图控制台命令对游戏单帧画面进行多次渲染，每次渲染完整分辨率的一部分，在所有部分完成后将它们拼接为一个单独的图像文件。
+默认将获得当前游戏分辨率四倍的截图，并在 Screenshot 目录中创建截图文件。 在编辑器窗口内（PIE）或以 standalone 模式运行游戏时，点击 ~ 按键打开命令控制台并输入：
+HighResShot参数
+HighResShot 控制台命令接受可选参数，可为当前游戏分辨率乘数的整数，或显式设置高宽分辨率的“WxH”值。
+输入以下命令获得的截图大小为屏幕分辨率的 2 倍。
+HighResShot 2
+同理，以下命令获得的截图分辨率为宽 3840，高 2160：
+HighResShot 3840x2160高分辨率截图工具
+![](https://imgsa.baidu.com/forum/w%3D580/sign=b13e45ab8b01a18bf0eb1247ae2d0761/0a3b284c510fd9f9edc096ee292dd42a2a34a4a2.jpg)
+通过高分辨率截图工具（HRSST）可指定视口特殊区域进行截图。还可通过它调整所获取截图的尺寸，并输出 GBuffer 的结果。
+访问高分辨率截图工具
+先点击 View Port Options，然后选择 High Resolution Screenshot 选项即可访问 HRSST。
+![](https://imgsa.baidu.com/forum/w%3D580/sign=88f671b6ad8b87d65042ab17370a2860/fb8f630fd9f9d72a5bb3d39ad82a2834369bbba2.jpg)
+选择 High Resolution Screenshot 后，HRSST 便会显示在屏幕上。
+![](https://imgsa.baidu.com/forum/w%3D580/sign=bbeb573c8bd6277fe9123230183a1f63/b0ccebf9d72a605919c7229d2434349b013bbaa2.jpg)
+可将 HRSST 移动至 UE4 中任意位置。然而须注意，有时 HRSST 可能会隐藏在其他浮动窗口（如 Content Browser）背后。
+数字 描述 
+1: 所设数字越大，截图尺寸越大。 
+2: 将 GBuffer 中每个通道作为导出图片。 
+3: 将把所有导出图片写为 .EXR 格式。该项将启用所有可用中间渲染阶段的 16 位色彩深度（HDR）导出。 
+4: 通过此项仅可抓取场景中的特定物体。如需使用此功能，首先要选择场景中需要进行抓取的网格体，然后启用 Render Custom Depth。启用该项和 Use custom depth as mask 后，即可在绿屏中看到启用了 Render Custom Depth 的物体。 
+5: 此项可在视口中指定区域进行抓取。首先点击工具，然后按下 鼠标左键 在编辑器视口中拖动即可选择抓取区域。 
+6: 点击此项即可清除之前创建的抓取区域。 
+7: 点击此项将把抓取区域设为整个编辑器窗口。 
+8: 点击此项即可进行截图。 
+由于高分辨率截图的系统要求较高，较大的乘数可能导致显卡驱动无响应或崩溃。如出现此类情况，请使用较低的分辨率。
+使用高分辨率截图
+通过以下几个步骤即可使用 HRSST 工具。
+
+开始前首先启动 HRSST 工具。先点击 View Port Options，然后选择 High Resolution Screenshot 选项。
+
+工具启动后，按下 Specify Region 按钮在编辑器视口中绘制需要进行抓取的区域。
+
+设置好抓取区域后，调整 Screenshot Size Multiplier 对截图尺寸进行设置，按下照相机图标即可完成截图。截图将被保存到 Saved\Screenshots\Windows 文件夹。
+
+** NOTE:使用ALT+S键执行运行，可以关闭其他显示的组件 **
